@@ -32,8 +32,16 @@
             .font-style{
                 font-family: Manrope;
             }
-            .full-bg{
-              background: linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);
+            @media screen and (max-width:576px){
+              .display-none{
+                display: none;
+              }
+              .background{
+                background-color:#F4F4F4;
+              }
+              .left{
+                margin-left: 40px ;
+              }
             }
         </style>
 </head>
@@ -123,7 +131,7 @@
          <div class="w-11/12 mx-auto flex flex-col lg:flex-row pt-12  ">
           <!-- part-1 -->
           <div class="lg:w-[660px]  ">
-            <img class="" src="assets/Vector.png" alt="">
+            <img class="display-none" src="assets/Vector.png" alt="">
             <div class="text-center lg:text-left">
             <a class="btn bg-white bg-opacity-50 text-1xl lg:ml-4    rounded-full font-bold mt-2 text-black ">
               <div class="">
@@ -231,8 +239,8 @@
       </div>
       </div>
         <!-- fourth section -->
-       <div class="container md:container mx-auto">
-        <div class="w-11/12  mt-14 mx-auto">
+       <div class="container background  md:container mx-auto">
+        <div class="w-11/12 lg:mt-14 pb-4 mx-auto">
         <!-- content -->
         <div class="text-center ">
           <a class="btn bg-[#ABEF5F33] bg-opacity-20 text-1xl   rounded-full font-bold mt-2 text-black ">
@@ -250,7 +258,7 @@
             <!--tittle-1-->
              <div class="flex flex-col lg:flex-row gap-3 mt-5 ">
               <!-- hero-1 -->
-              <div class="hero border ml-[5px] lg:ml-5 rounded-lg border-1 w-[380px] h-[440px] lg:w-[770px] lg:h-[220px]">
+              <div class="hero bg-white lg:bg-none border ml-[5px] lg:ml-5 rounded-2xl border-1 w-[380px] h-[440px] lg:w-[770px] lg:h-[220px]">
                 <div class="hero-content flex-col lg:flex-row">
                   <img class="w-[345px] lg:w-[270px]" src="assets/img1.png"
                     class="max-w-sm rounded-lg " />
@@ -270,18 +278,18 @@
                 </div>
               </div>
               <!-- hero-2 -->
-              <div class=" w-[380px] lg:w-[350px] h-[230px] lg:h-[220px] border rounded-lg mx-auto   border-1">
+              <div class=" w-[380px] bg-white lg:bg-none lg:w-[350px] h-[230px] lg:h-[220px] border rounded-2xl mx-auto   border-1">
                 <img class="mx-auto mt-5 w-[345px] lg:w-[310px]" src="assets/img2.png" alt="">
               </div>
              </div>
                <!--tittle-2 -->
                 <div class="flex flex-col lg:flex-row gap-3 mt-4 ">
                   <!-- hero-1 -->
-                  <div class="lg:w-[260px] lg:h-[220px] w-[380px] h-[260px] lg:ml-5  border rounded-lg mx-auto   border-1">
+                  <div class="lg:w-[260px] bg-white lg:bg-none lg:h-[220px] w-[380px] h-[260px] lg:ml-5  border rounded-2xl mx-auto   border-1">
                     <img class="mx-auto mt-5 w-[345px] h-[220px] lg:h-[180px] lg:w-[230px]" src="assets/img3.png" alt="">
                   </div>
                   <!-- hero-2 -->
-                  <div class="hero border ml-[5px] lg:ml-0  rounded-lg border-1 w-[380px]  lg:w-[600px] h-[440px] lg:h-[220px]">
+                  <div class="hero border ml-[5px] lg:ml-0 bg-white lg:bg-none  rounded-2xl border-1 w-[380px]  lg:w-[600px] h-[440px] lg:h-[220px]">
                     <div class="hero-content flex-col lg:flex-row">
                       <img class="w-[345px] lg:w-[270px]" src="assets/img4.png"
                         class="max-w-sm rounded-lg " />
@@ -301,94 +309,94 @@
                     </div>
                   </div>
                   <!-- hero-3 -->
-                  <div class="lg:w-[260px] lg:h-[220px] w-[380px] h-[260px]  border rounded-lg mx-auto   border-1">
+                  <div class="lg:w-[260px] bg-white lg:bg-none lg:h-[220px] w-[380px] h-[260px]  border rounded-2xl mx-auto   border-1">
                     <img class="mx-auto mt-5  w-[345px] h-[220px] lg:h-[180px] lg:w-[230px]" src="assets/img5.png" alt="">
                   </div>
                 </div>
           </div>
        </div>
        <!-- fifth section -->
-        <div class="w-11/12 mx-auto mt-9 ">
+        
+        <!-- challenge-part -->
+         <div class="container md:container lg:mt-6 bg-[#F4F4F4]">
           <!-- content -->
           <div class="text-center ">
-            <a class="btn bg-[#ABEF5F33] bg-opacity-20 text-1xl  rounded-full font-bold text-black ">
+            <a class="btn bg-white bg-opacity-50 text-1xl lg:ml-4    rounded-full font-bold mt-8 text-black ">
               <div class="">
-                <i class="fa-solid fa-arrow-right -rotate-45 text-black"></i>
-               </div>Rinterio News
+                <i class="fa-solid fa-arrow-right  text-black"></i>
+               </div>Explore our survices
             </a>
             <h1 class="text-4xl mt-2 font-bold ">
-              Read Our Articles and News
+              We Provide Services
             </h1>
-            <p class="w-2/2 lg:w-1/2 mx-auto mt-2">
-              These homes tend to come in simple shapes and might have stone bases, cupolas, rustic wood-plank siding, and gable or gambrel roofs
-            </p>
+            <p class="w-4/5 lg:w-1/2 mx-auto mt-2">
+              It involves any system or equipment within a building that makes that space comfortable and safe.
            </div>
            <!-- card -->
-            <div class=" mx-auto  grid grid-cols-1 lg:grid-cols-3 lg:gap-5 gap-4 lg:ml-4 mt-5">
-              <!-- card-1 -->
-              <div class="card card-compact bg-base-100 w-[360px] border border-1 ">
-                <figure class="mt-5">
-                  <img
-                    src="assets/article1.png"
-                    alt="Shoes" />
-                </figure>
-                <div class="card-body ml-1">
-                  <h2 class="card-title">How to choose the furniture right  of your home.</h2>
-                  <p>A barn is an outbuilding on a farm used to keep animals or crops safe and dry.</p>
-                  <div class="flex  ">
-                    <p class="font-bold">Read More 
-                    </p>
-                    <div class="bg-[#ABEF5F] pl-[5.5px] p mr-56  w-6 h-6  rounded-full">
-                      <i class="fa-solid fa-arrow-right -rotate-45 text-black"></i>
-                     </div>
-                     
-                  </div>
-                </div>
-              </div>
-              <!-- card-2 -->
-              <div class="card card-compact bg-base-100 w-[360px] border border-1 ">
-                <figure class="mt-5">
-                  <img
-                    src="assets/article2.png"
-                    alt="Shoes" />
-                </figure>
-                <div class="card-body ml-1">
-                  <h2 class="card-title">How to choose the furniture right  of your home.</h2>
-                  <p>A barn is an outbuilding on a farm used to keep animals or crops safe and dry.</p>
-                  <div class="flex  ">
-                    <p class="font-bold">Read More 
-                    </p>
-                    <div class="bg-[#ABEF5F]  pl-[5.5px] mr-56  w-6 h-6  rounded-full">
-                      <i class="fa-solid fa-arrow-right -rotate-45 text-black"></i>
-                     </div>
-                     
-                  </div>
-                </div>
-              </div>
-              <!-- card-3 -->
-              <div class="card card-compact bg-base-100 w-[360px] border border-1 ">
-                <figure class="mt-5">
-                  <img
-                    src="assets/article3.png"
-                    alt="Shoes" />
-                </figure>
-                <div class="card-body ml-1">
-                  <h2 class="card-title">How to choose the furniture right  of your home.</h2>
-                  <p>A barn is an outbuilding on a farm used to keep animals or crops safe and dry.</p>
-                  <div class="flex  ">
-                    <p class="font-bold">Read More 
-                    </p>
-                    <div class="bg-[#ABEF5F]  pl-[5.5px] mr-56  w-6 h-6  rounded-full">
-                      <i class="fa-solid fa-arrow-right -rotate-45 text-black"></i>
-                     </div>
-                     
-                  </div>
+           <div class="w-11/12 mr-[4px] lg mx-auto pb-11 grid grid-cols-1 lg:grid-cols-3 lg:mr-7 gap-6 lg:gap-0 mt-5">
+            <!-- card-1 -->
+            <div class="card card-compact bg-base-100 w-[360px] lg:w-[345px] border border-1 ">
+              <figure class="">
+                <img
+                  src="assets/social-card-1600x900.jpg"
+                  alt="Shoes" />
+              </figure>
+              <div class="card-body items-center ml-1">
+                <h2 class="card-title">Building Construction</h2>
+                <p class="text-center">A service is an act or use for which a consumer, company, or government is willing to pay.</p>
+                <div class="flex mt-2 gap-[5px] ">
+                  <p class="font-bold">Read More 
+                  </p>
+                  <div class="bg-[#ABEF5F] pl-[5.5px]   w-6 h-6  rounded-full">
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-black"></i>
+                   </div>
+                   
                 </div>
               </div>
             </div>
-        </div>
+            <!-- card-2 -->
+            <div class="card card-compact bg-base-100 w-[360px] lg:w-[345px] h- border border-1 ">
+              <figure class="">
+                <img class="h-[195px]" src="assets/shutterstock-682846960-jpg.jpg"
+                  alt="Shoes" />
+              </figure>
+              <div class="card-body items-center  ml-1">
+                <h2 class="card-title "> House Renovation</h2>
+                <p class="text-center">A service is an act or use for which a consumer, company, or government is willing to pay.</p>
+                <div class="flex mt-2 gap-[5px] ">
+                  <p class="font-bold">Read More 
+                  </p>
+                 <div class="bg-[#ABEF5F]  pl-[5.5px]   w-6 h-6  rounded-full">
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-black"></i>
+                   </div> 
+                   
+                </div>
+              </div>
+            </div>
+            <!-- card-3 -->
+            <div class="card card-compact bg-base-100 w-[360px] lg:w-[345px] border border-1 ">
+              <figure class="">
+                <img
+                  src="assets/hero-image.jpg"
+                  alt="Shoes" />
+              </figure>
+              <div class="card-body items-center ">
+                <h2 class="card-title text-[22px] ">Architecture Design</h2>
+                <p class="text-center">A service is an act or use for which a consumer, company, or government is willing to pay.</p>
+                <div class="flex mt-2 gap-[5px] ">
+                  <p class="font-bold">Read More 
+                  </p>
+                  <div class="bg-[#ABEF5F]  pl-[5.5px]  w-6 h-6  rounded-full">
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-black"></i>
+                   </div>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
       <!-- six-section -->
-        <div class="mt-9 lg:h-[700px] h-[850px] w-full"
+        <div class="lg:mt-5 mt-2 lg:h-[700px] h-[850px] w-full"
           style="background-image: url(assets/bg.jpg);
           background-repeat: no-repeat;
           background-size: cover;">
@@ -424,14 +432,14 @@
          </div>  
     </main>
       <footer class="footer footer-center bg-black text-base-content rounded p-10">
-        <div class="flex mb-0 ">
+        <div class="flex  ">
           <div class="bg-[#ABEF5F] pl-[2px]  w-6 h-6  rounded-full">
             <i class="fa-solid fa-arrow-right -rotate-45 text-black"></i>
            </div>
            <p class="font-bold text-[19px] text-white">Rinterio
           </p>
         </div>
-        <p class="text-[#737373] w-3/4 lg:w-1/2">
+        <p class="text-[#737373]  w-3/4 lg:w-1/2">
           These homes tend to come in simple shapes and might have stone bases, cupolas, rustic wood-plank siding, and gable or gambrel roofs
         </p>
         <nav class="grid lg:grid-flow-col grid-flow-row lg:gap-12 gap-8">
